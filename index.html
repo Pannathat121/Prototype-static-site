@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>This is a BMI calculator</h1>
+    </header>
+
+    <main>
+        <div class="calculator">
+<input type="number" id="height" placeholder="ส่วนสูง (cm)">
+<input type="number" id="weight" placeholder="น้ำหนัก (kg)">
+<button onclick="calculateBMI()">คำนวณ BMI</button>
+
+<p class="result" id="result">Result:</p>
+
+ </div>
+
+ <table>
+    <tr>
+        <th>ช่วง BMI</th>
+        <th>การวินิจฉัย</th>
+    </tr>
+    <tr>
+        <td>น้อยกว่า 18.5</td>
+        <td>น้ำหนักต่ำกว่าเกณฑ์</td>
+    </tr>
+    <tr>
+        <td>18.5 - 22.9</td>
+        <td>น้ำหนักปกติ</td>
+    </tr>
+    <tr>
+        <td>23 - 24.9</td>
+        <td>น้ำหนักเกิน</td>
+    </tr>
+    <tr>
+        <td>25 - 29.9</td>
+        <td>อ้วน</td>
+    </tr>
+    <tr>
+        <td>30 +</td>
+        <td>อ้วนมาก</td>
+    </tr>
+ </table>
+
+</main>
+    
+</body>
+</html>
