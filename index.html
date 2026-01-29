@@ -1,57 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BMI Calculator</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body class="min-h-screen bg-gray-100 flex items-center justify-center">
 
-<body>
-
-    <header>
-        <h1>This is a BMI calculator</h1>
-    </header>
-
-    <main>
-        <div class="calculator">
-<input type="number" id="height" placeholder="ส่วนสูง (cm)">
-<input type="number" id="weight" placeholder="น้ำหนัก (kg)">
-<button onclick="calculateBMI()">คำนวณ BMI</button>
-
-<p class="result" id="result">Result:</p>
-
- </div>
-
- <table>
-    <tr>
-        <th>ช่วง BMI</th>
-        <th>การวินิจฉัย</th>
-    </tr>
-    <tr>
-        <td>น้อยกว่า 18.5</td>
-        <td>น้ำหนักต่ำกว่าเกณฑ์</td>
-    </tr>
-    <tr>
-        <td>18.5 - 22.9</td>
-        <td>น้ำหนักปกติ</td>
-    </tr>
-    <tr>
-        <td>23 - 24.9</td>
-        <td>น้ำหนักเกิน</td>
-    </tr>
-    <tr>
-        <td>25 - 29.9</td>
-        <td>อ้วน</td>
-    </tr>
-    <tr>
-        <td>30 +</td>
-        <td>อ้วนมาก</td>
-    </tr>
- </table>
-
-</main>
+  <div class="w-full max-w-sm bg-white p-6 rounded-xl shadow">
     
+    <h1 class="text-2xl font-bold text-center mb-6">
+      เข้าสู่ระบบ
+    </h1>
+
+    <!-- Email -->
+    <div class="mb-4">
+      <label class="block text-sm mb-1">อีเมล</label>
+      <input
+        type="email"
+        placeholder="example@email.com"
+        class="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+      />
+    </div>
+
+    <!-- Password -->
+    <div class="mb-6">
+      <label class="block text-sm mb-1">รหัสผ่าน</label>
+      <input
+        type="password"
+        placeholder="••••••••"
+        class="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+      />
+    </div>
+
+    <!-- Button -->
+    <button
+      class="w-full bg-blue-500 text-white py-3 rounded-lg font-medium hover:bg-blue-600 transition"
+    >
+      เข้าสู่ระบบ
+    </button>
+
+    <!-- Register -->
+    <p class="text-center text-sm text-gray-500 mt-4">
+      ยังไม่มีบัญชี?
+      <a href="#" class="text-blue-500">สมัครสมาชิก</a>
+    </p>
+
+  </div>
+
 </body>
 </html>
