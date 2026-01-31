@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+    <html lang="th">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="min-h-screen bg-gray-100 flex items-center justify-center">
+
+        <div class="w-full max-w-sm bg-white p-6 rounded-xl shadow">
+            
+            <h1 class="text-2xl font-bold text-center mb-6">
+                สมัครสมาชิก
+            </h1>
+
+            <!-- Name -->
+            <div class="mb-4">
+                <label class="block text-sm mb-1">ชื่อ</label>
+                <input
+                    type="text"
+                    placeholder="ชื่อของคุณ"
+                    class="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                />
+            </div>
+
+            <!-- Email -->
+            <div class="mb-4">
+                <label class="block text-sm mb-1">อีเมล</label>
+                <input
+                    type="email"
+                    placeholder="example@email.com"
+                    class="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                />
+            </div>
+
+            <!-- Password -->
+            <div class="mb-4">
+                <label class="block text-sm mb-1">รหัสผ่าน</label>
+                <input
+                    type="password"
+                    placeholder="••••••••"
+                    class="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                />
+            </div>
+
+            <!-- Confirm Password -->
+            <div class="mb-6">
+                <label class="block text-sm mb-1">ยืนยันรหัสผ่าน</label>
+                <input
+                    type="password"
+                    placeholder="••••••••"
+                    class="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                />
+            </div>
+
+            <!-- Button -->
+            <button
+                class="w-full bg-blue-500 text-white py-3 rounded-lg font-medium hover:bg-blue-600 transition"
+            >
+                สมัครสมาชิก
+            </button>
+
+            <!-- Login -->
+            <p class="text-center text-sm text-gray-500 mt-4">
+                มีบัญชีอยู่แล้ว?
+                <a href="index.html" class="text-blue-500">เข้าสู่ระบบ</a>
+            </p>
+
+        </div>
+
+    </body>
+    </html>
