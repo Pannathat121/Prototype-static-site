@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="script.js"></script>
+  <title>Settings</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gray-100">
+
+  <div class="max-w-2xl mx-auto p-6">
+    
+    <!-- Header -->
+    <div class="mb-8">
+      <h1 class="text-3xl font-bold text-gray-800">
+        การตั้งค่า
+      </h1>
+      <p class="text-gray-500 mt-2">จัดการการตั้งค่าบัญชีของคุณ</p>
+    </div>
+
+    <!-- Settings Card -->
+    <div class="bg-white rounded-xl shadow p-6 space-y-6">
+
+      <!-- Profile Section -->
+      <div class="border-b pb-6">
+        <h2 class="text-lg font-semibold text-gray-800 mb-4">ข้อมูลโปรไฟล์</h2>
+        
+        <div class="mb-4">
+          <label class="block text-sm mb-2">ชื่อผู้ใช้</label>
+          <input
+            type="text"
+            placeholder="กรุณากรอกชื่อผู้ใช้"
+            class="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          />
+        </div>
+
+        <div class="mb-4">
+          <label class="block text-sm mb-2">อีเมล</label>
+          <input
+            type="email"
+            placeholder="example@email.com"
+            class="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          />
+        </div>
+
+        <div>
+          <label class="block text-sm mb-2">เบอร์โทรศัพท์</label>
+          <input
+            type="tel"
+            placeholder="0812345678"
+            class="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          />
+        </div>
+      </div>
+
+      <!-- Security Section -->
+      <div class="border-b pb-6">
+        <h2 class="text-lg font-semibold text-gray-800 mb-4">ความปลอดภัย</h2>
+        
+        <div class="mb-4">
+          <label class="block text-sm mb-2">รหัสผ่านปัจจุบัน</label>
+          <input
+            type="password"
+            placeholder="••••••••"
+            class="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          />
+        </div>
+
+        <div class="mb-4">
+          <label class="block text-sm mb-2">รหัสผ่านใหม่</label>
+          <input
+            type="password"
+            placeholder="••••••••"
+            class="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          />
+        </div>
+
+        <div>
+          <label class="block text-sm mb-2">ยืนยันรหัสผ่านใหม่</label>
+          <input
+            type="password"
+            placeholder="••••••••"
+            class="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          />
+        </div>
+      </div>
+
+      <!-- Preferences Section -->
+      <div class="pb-6">
+        <h2 class="text-lg font-semibold text-gray-800 mb-4">การตั้งค่าอื่น ๆ</h2>
+        
+        <div class="flex items-center justify-between mb-4">
+          <label class="text-sm">แจ้งเตือนทางอีเมล</label>
+          <input type="checkbox" class="w-5 h-5" checked />
+        </div>
+
+        <div class="flex items-center justify-between mb-4">
+          <label class="text-sm">เปิดใช้งาน 2FA</label>
+          <input type="checkbox" class="w-5 h-5" />
+        </div>
+
+        <div>
+          <label class="block text-sm mb-2">ภาษา</label>
+          <select class="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400">
+            <option>ไทย</option>
+            <option>English</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Buttons -->
+      <div class="flex gap-4 pt-4">
+        <button class="flex-1 bg-blue-500 text-white py-3 rounded-lg font-medium hover:bg-blue-600 transition">
+          บันทึก
+        </button>
+        <a href="home.html" class="flex-1">
+          <button class="w-full bg-gray-300 text-gray-700 py-3 rounded-lg font-medium hover:bg-gray-400 transition">
+            ยกเลิก
+          </button>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
