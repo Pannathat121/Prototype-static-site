@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Optional: show success alert then redirect
         alert('สมัครสมาชิกสำเร็จ');
-        window.location.href = 'index.html';
+        window.location.href = 'login.html';
     });
 });
 
